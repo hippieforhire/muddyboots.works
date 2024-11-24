@@ -1,83 +1,60 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Open Sauce Sans', Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    font-family: 'Open Sauce', sans-serif;
 }
 
-/* Hero Section */
-.hero-section {
-    position: relative;
-    text-align: center;
-    color: white;
-    height: 100vh; /* Ensure the hero section takes the full viewport height */
-    background-image: url('IMG_1634.jpeg'); /* Use the image as a background */
-    background-size: cover; /* Ensure the image covers the section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-color: #000; /* Fallback background color for debugging */
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 56.7px; /* Set font size for the heading */
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Open Sauce Sans', Arial, sans-serif; /* Use Open Sauce font */
-}
-
-.hero-text p {
-    font-size: 1.5rem; /* Increase the font size of the subtext */
-    margin-top: 10px;
-}
-
-/* Section Styling */
-.section {
-    text-align: center;
-    padding: 20px;
-    background: #f9f9f9;
-}
-
-.section-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin: 10px auto;
-}
-
-/* Row Section */
-.row {
+.page {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
-    background: #eaeaea;
-}
-
-.row p {
-    flex: 1;
-    margin-right: 20px;
-}
-
-/* Footer */
-.footer {
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
 }
 
-.footer-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin-top: 10px;
+#page1 {
+    background: url('IMG_1634.jpeg') no-repeat center center/cover;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+}
+
+#page1 h1 {
+    font-size: 55.7px;
+}
+
+#page1 h2 {
+    font-size: 55.7px;
+    position: relative;
+    top: -30px;
+}
+
+#page2 {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#page2 .content {
+    max-width: 50%;
+}
+
+#page2 h1 {
+    font-size: 60px;
+}
+
+#page2 h2 {
+    font-size: 60px;
+}
+
+#page2 p {
+    font-size: 26px;
+    margin-top: 20px;
 }
