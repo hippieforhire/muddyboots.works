@@ -1,14 +1,17 @@
 body {
     margin: 0;
     font-family: 'Open Sauce', sans-serif;
+    overflow-x: hidden;
 }
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #page1 {
@@ -35,11 +38,6 @@ body {
 #page2 {
     background-color: orange;
     color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 #page2 .content {
