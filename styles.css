@@ -43,7 +43,9 @@ body {
 }
 
 #page2 .content {
-    max-width: 50%;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: left;
 }
 
 #page2 h1 {
@@ -56,5 +58,11 @@ body {
 
 #page2 p {
     font-size: 26px;
+    margin-top: 20px;
+}
+
+#page2 img {
+    width: 100%;
+    height: auto;
     margin-top: 20px;
 }
