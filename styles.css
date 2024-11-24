@@ -25,14 +25,9 @@ body {
     padding: 20px;
 }
 
-#page1 h1 {
-    font-size: 55.7px;
-}
-
-#page1 h2 {
-    font-size: 55.7px;
-    position: relative;
-    top: -30px;
+#animated-text {
+    width: 80%;
+    height: auto;
 }
 
 #page2 {
