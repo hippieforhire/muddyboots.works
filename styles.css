@@ -1,86 +1,60 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
     font-family: 'Open Sauce', sans-serif;
-    scroll-behavior: smooth;
 }
 
-.full-page {
+.page {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-
-/* Page 1 Styles */
-#page1 {
-    background: url('IMG_1634.jpeg') no-repeat center center/cover;
-    color: white;
     text-align: center;
 }
 
-#page1 .overlay h1 {
-    font-size: 55.7px;
-    margin: 0;
-}
-
-#page1 .overlay h2 {
-    font-size: 55.7px;
-    margin-top: -20px;
+#page1 {
+    background: url('IMG_1634.jpeg') no-repeat center center/cover;
     position: relative;
-    left: -15px; /* Center under the "o"s */
 }
 
-/* Page 2 Styles */
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+}
+
+#page1 h1 {
+    font-size: 55.7px;
+}
+
+#page1 h2 {
+    font-size: 55.7px;
+    position: relative;
+    top: -30px;
+}
+
 #page2 {
     background-color: orange;
     color: white;
-    padding: 2rem;
-}
-
-.page2-content {
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 2rem;
 }
 
-.left-content h1 {
+#page2 .content {
+    max-width: 50%;
+}
+
+#page2 h1 {
     font-size: 60px;
 }
 
-.left-content h2 {
+#page2 h2 {
     font-size: 60px;
-    margin-top: 10px;
 }
 
-.right-content img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-}
-
-.right-content p {
+#page2 p {
     font-size: 26px;
-    margin-top: 1rem;
-}
-
-/* Future Columns */
-.columns {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.column {
-    flex: 1;
-    height: 200px;
-    background-color: white;
-    border-radius: 8px;
+    margin-top: 20px;
 }
