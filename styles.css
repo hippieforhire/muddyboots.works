@@ -1,61 +1,78 @@
-body {
+/* General Reset */
+* {
     margin: 0;
-    font-family: 'Open Sauce', sans-serif;
-    overflow-x: hidden;
-}
-
-.page {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
 }
 
-#page1 {
-    background: url('IMG_1634.jpeg') no-repeat center center/cover;
-    position: relative;
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.overlay {
-    background: rgba(0, 0, 0, 0.5);
+/* Header */
+header {
+    background-color: #4CAF50;
     color: white;
-    padding: 20px;
+    padding: 1rem 2rem;
+    text-align: center;
 }
 
-#animated-text {
-    width: 80%;
-    height: auto;
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
 }
 
-#page2 {
-    background-color: orange;
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
     color: white;
+    text-decoration: none;
 }
 
-#page2 .content {
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: left;
+/* Hero Section */
+.hero {
+    background: url('img/landscape.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
 }
 
-#page2 h1 {
-    font-size: 60px;
+/* Services Section */
+.services-overview {
+    padding: 2rem;
+    text-align: center;
 }
 
-#page2 h2 {
-    font-size: 60px;
+.services-overview ul {
+    list-style: none;
+    padding: 0;
 }
 
-#page2 p {
-    font-size: 26px;
-    margin-top: 20px;
+.services-overview ul li {
+    margin: 0.5rem 0;
 }
 
-#page2 img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #333;
 }
