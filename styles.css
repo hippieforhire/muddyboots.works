@@ -36,23 +36,28 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* Hero Section */
-.hero {
-    background: url('img/landscape.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 5rem 2rem;
-    text-align: center;
+/* Apply a single background to the parent container */
+.main-content {
+    background: url('IMG_1634.jpeg') no-repeat center center/cover;
     background-size: cover;
-    background-position: center center;
+    background-attachment: fixed; /* Optional for parallax effect */
+}
+
+/* Remove individual section backgrounds */
+.hero, .services-overview {
+    background: none;
+}
+
+/* Adjust padding/margin to minimize gaps */
+.hero {
+    padding: 5rem 2rem 2rem; /* Reduce bottom padding */
+}
+
+.services-overview {
+    padding: 2rem 2rem 5rem; /* Add more padding only to the bottom */
 }
 
 /* Services Section */
-.services-overview {
-    padding: 2rem;
-    text-align: center;
-    background: url('IMG_1634.jpeg') no-repeat center center/cover;
-}
-
 .services-overview ul {
     list-style: none;
     padding: 0;
