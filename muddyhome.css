@@ -4,4 +4,6 @@
     margin: 2rem 0; /* Space between the sections */
     padding: 2rem; /* Padding inside the gray box */
     border-radius: 10px; /* Rounded corners */
+    position: relative; /* Ensure the box is positioned correctly */
+    z-index: 1; /* Higher z-index to ensure visibility */
 }
