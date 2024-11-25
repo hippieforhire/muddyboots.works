@@ -42,6 +42,8 @@ header nav ul li a {
     color: white;
     padding: 5rem 2rem;
     text-align: center;
+    background-size: cover;
+    background-position: center center;
 }
 
 /* Services Section */
