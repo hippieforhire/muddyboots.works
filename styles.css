@@ -48,6 +48,7 @@ header nav ul li a {
 .services-overview {
     padding: 2rem;
     text-align: center;
+    background: url('IMG_1634.jpeg') no-repeat center center/cover;
 }
 
 .services-overview ul {
