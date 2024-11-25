@@ -1,9 +1,25 @@
 /* Gray Box Styling */
 .gray-box {
-    background-color: rgba(128, 128, 128, 0.5); /* Transparent gray color */
-    margin: 2rem 0; /* Space between the sections */
-    padding: 2rem; /* Padding inside the gray box */
+    position: absolute; /* Allow the box to overlay */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the section */
+    height: 100%; /* Full height of the section */
+    background-color: rgba(128, 128, 128, 0.5); /* Transparent gray */
     border-radius: 10px; /* Rounded corners */
-    position: relative; /* Ensure the box is positioned correctly */
-    z-index: 1; /* Higher z-index to ensure visibility */
+    z-index: -1; /* Push behind the text content */
+}
+
+section {
+    position: relative; /* Ensure the section is positioned for the gray box */
+}
+
+/* Hero Section Text Styling */
+.logo h1 {
+    font-family: 'Georgia', serif; /* Fancy font */
+    font-size: 3rem; /* Larger font size */
+    color: #2c3e50; /* Dark blue color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    margin: 0;
+    padding: 0.5rem 0;
 }
