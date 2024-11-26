@@ -1,79 +1,31 @@
-section {
-    position: relative;
-}
-
-/* Hero Section Styling */
+/* Hero Section */
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background-color: #4CAF50; /* Keep the green background */
     color: white;
-    padding: 3rem;
+    padding: 3rem 2rem 5rem; /* Add bottom padding for spacing */
     position: relative;
-    background: url('IMG_1634.jpeg') no-repeat center center/cover;
-}
-
-.hero-title {
-    font-size: 4rem;
-    font-family: 'Georgia', serif;
-    color: #ffffff;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-    margin: 0;
-}
-
-.hero-text h2 {
-    font-size: 2rem;
-    margin: 1rem 0 0.5rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-/* Hero Navigation */
-.hero-nav {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
     text-align: center;
 }
 
-.hero-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Hero Text */
+.hero-text {
+    margin-bottom: 2rem;
 }
 
-.hero-nav ul li {
-    margin: 0 1rem;
-}
-
-.hero-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* Hero Links Styling */
+/* Navigation Buttons at the Bottom */
 .hero-links {
-    margin-top: 1.5rem;
+    position: absolute;
+    bottom: 1rem; /* Align buttons at the very bottom of the green section */
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
     gap: 1rem;
 }
 
+/* Buttons */
 .hero-links .button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffffff; /* White for contrast */
+    color: #4CAF50;
     padding: 0.7rem 1.5rem;
     text-decoration: none;
     font-size: 1rem;
@@ -82,34 +34,33 @@ section {
 }
 
 .hero-links .button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Slightly darker green on hover */
+    color: white;
 }
 
-/* Services Overview Styling */
+/* Main Content Background */
+.main-content {
+    background: url('IMG_1634.jpeg') no-repeat center center/cover;
+    background-attachment: fixed; /* Keep the background fixed */
+    color: white;
+}
+
+/* Remove White Space */
 .services-overview {
+    padding: 3rem 2rem;
+    margin: 0;
+    background: none; /* Use the main-content background */
     text-align: center;
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.services-overview h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
+/* Services List */
 .services-list {
     list-style: none;
     padding: 0;
+    margin: 1rem 0;
 }
 
-.services-list li {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    font-weight: 600;
-}
-
+/* Services Buttons */
 .button {
     background-color: #4CAF50;
     color: white;
@@ -124,13 +75,4 @@ section {
 
 .button:hover {
     background-color: #45a049;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
 }
