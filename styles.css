@@ -88,3 +88,25 @@ footer {
     text-align: center;
     margin: 2rem 0;
 }
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h2, .hero p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
