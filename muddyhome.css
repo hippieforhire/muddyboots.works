@@ -23,3 +23,29 @@ section {
     margin: 0;
     padding: 0.5rem 0;
 }
+
+/* Hero Navigation */
+.hero-nav {
+    position: absolute;
+    bottom: 10px; /* Adjust position from the bottom */
+    width: 100%;
+    text-align: center;
+}
+
+.hero-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-nav ul li {
+    margin: 0 1rem;
+}
+
+.hero-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* Adjust font size as needed */
+}
