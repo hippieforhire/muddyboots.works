@@ -50,7 +50,7 @@ header nav ul li a {
 
 /* Adjust padding/margin to minimize gaps */
 .hero {
-    padding: 5rem 2rem 2rem; /* Reduce bottom padding */
+    padding: 2rem 1rem; /* Adjust padding as needed */
 }
 
 .services-overview {
