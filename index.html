@@ -6,10 +6,11 @@
     <title>Muddy Boots Services</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="muddyhome.css">
-    <link rel="stylesheet" href="overhaul.css"> <!-- New CSS for the polished design -->
+    <link rel="stylesheet" href="overhaul.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> <!-- Animation Library -->
 </head>
 <body>
-    <header>
+    <header class="sticky-header">
         <div class="logo">
             <h1 class="hero-title">Muddy Boots Services</h1>
         </div>
@@ -17,12 +18,12 @@
 
     <main class="main-content">
         <section class="hero">
-            <div class="hero-overlay"></div> <!-- Overlay for better text contrast -->
-            <div class="hero-text">
+            <div class="hero-overlay"></div>
+            <div class="hero-text" data-aos="fade-up">
                 <h2>Your goals are our goals!</h2>
                 <p>We specialize in excavation, land development, woodworking, and general designing and building services, tailored to your needs.</p>
             </div>
-            <div class="hero-links">
+            <div class="hero-links" data-aos="zoom-in">
                 <a href="about.html" class="button">About Us</a>
                 <a href="services.html" class="button">Our Services</a>
                 <a href="contact.html" class="button">Contact Us</a>
@@ -30,19 +31,19 @@
         </section>
 
         <section class="services-overview">
-            <h2>Our Services</h2>
-            <ul class="services-list">
+            <h2 data-aos="fade-down">Our Services</h2>
+            <ul class="services-list" data-aos="fade-up">
                 <li>Land Development</li>
                 <li>Excavation</li>
                 <li>Carpentry</li>
                 <li>Lawn Care</li>
                 <li>General Services</li>
             </ul>
-            <a href="services.html" class="button">Learn More</a>
+            <a href="services.html" class="button" data-aos="flip-left">Learn More</a>
         </section>
     </main>
 
-    <footer>
+    <footer data-aos="fade-up">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -53,5 +54,8 @@
         </nav>
         <p>Copyright © 2024 Muddy Boots Services - All Rights Reserved.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> <!-- Animation Library -->
+    <script src="interactions.js"></script> <!-- Custom JS -->
 </body>
 </html>
