@@ -6,30 +6,39 @@
     <title>Muddy Boots Services</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="muddyhome.css">
-    <link rel="stylesheet" href="overhaul.css"> <!-- New CSS for the polished design -->
+    <link rel="stylesheet" href="overhaul.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
         <div class="logo">
             <h1 class="hero-title">Muddy Boots Services</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main-content">
         <section class="hero">
-            <div class="hero-overlay"></div> <!-- Overlay for better text contrast -->
-            <div class="hero-text">
+            <div class="hero-overlay"></div>
+            <div class="hero-text" data-aos="fade-down">
                 <h2>Your goals are our goals!</h2>
                 <p>We specialize in excavation, land development, woodworking, and general designing and building services, tailored to your needs.</p>
             </div>
-            <div class="hero-links">
+            <div class="hero-links" data-aos="fade-up">
                 <a href="about.html" class="button">About Us</a>
                 <a href="services.html" class="button">Our Services</a>
                 <a href="contact.html" class="button">Contact Us</a>
             </div>
         </section>
 
-        <section class="services-overview">
+        <section class="services-overview" data-aos="fade-up">
             <h2>Our Services</h2>
             <ul class="services-list">
                 <li>Land Development</li>
@@ -53,5 +62,8 @@
         </nav>
         <p>Copyright © 2024 Muddy Boots Services - All Rights Reserved.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="interactions.js"></script>
 </body>
 </html>
