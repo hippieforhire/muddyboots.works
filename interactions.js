@@ -1,5 +1,5 @@
 // Import GSAP for animations
-import { gsap } from "../node_modules/gsap/index.js";
+import { gsap } from "./node_modules/gsap/index.js";
 
 // Initialize AOS Library for Scroll Animations
 document.addEventListener("DOMContentLoaded", () => {
