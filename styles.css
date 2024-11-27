@@ -74,21 +74,54 @@ header nav ul li a:hover {
     z-index: 2; /* Ensure text is above overlay */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text contrast */
     max-width: 600px;
-    background: rgba(255, 255, 255, 0.1); /* Light translucent background for better contrast */
-    padding: 1rem;
-    border-radius: 10px;
+    margin-top: -2.5rem; /* Adjusted to position higher */
+    text-transform: uppercase; /* Added for stylish text */
 }
 
-.hero h2 {
+/* Fade-in Animations */
+.hero-text span {
+    display: block;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    opacity: 0; /* Hidden by default */
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin: 0 auto;
+.hero-text span:first-child {
+    animation-name: fadeIn1;
+    animation-delay: 0.5s; /* Fade in first after slight delay */
 }
 
+.hero-text span:last-child {
+    animation-name: fadeIn2;
+    animation-delay: 2s; /* Fade in second after the first fades in */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Slide up slightly */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Slide up slightly */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Buttons */
 .hero-links {
     display: flex;
     justify-content: center; /* Center buttons horizontally */
