@@ -1,0 +1,19 @@
+{
+  "name": "muddyboots.works",
+  "version": "1.0.0",
+  "description": "",
+  "main": "interactions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "express": "^4.21.1",
+    "gsap": "^3.12.5",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15"
+  }
+}
