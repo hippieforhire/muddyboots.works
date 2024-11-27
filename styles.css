@@ -26,20 +26,6 @@ header {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
-header h1 {
-    font-family: 'Montserrat', sans-serif; /* Use a professional, clean font */
-    font-size: 3rem; /* Increase font size */
-    font-weight: 700; /* Make the font bold */
-    letter-spacing: 2px; /* Add spacing between letters */
-    text-transform: uppercase; /* Make text uppercase */
-    background: linear-gradient(to right, #4CAF50, #002B5B); /* Add gradient */
-    -webkit-background-clip: text;
-    color: transparent; /* Use gradient as text color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
-    margin: 0; /* Remove margin */
-}
-
-/* Header Navigation */
 header nav ul {
     display: flex;
     justify-content: center;
@@ -90,19 +76,6 @@ header nav ul li a:hover {
     max-width: 600px;
     margin-top: -2.5rem; /* Adjusted to position higher */
     text-transform: uppercase; /* Added for stylish text */
-}
-
-/* Carousel Styling */
-.carousel-container {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 2rem;
-}
-
-.carousel img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
 }
 
 /* Fade-in Animations */
