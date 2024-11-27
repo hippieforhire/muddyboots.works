@@ -5,6 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
         once: true,     // Run animation only once
         offset: 100     // Offset to trigger animations
     });
+
+    // Initialize Slick Carousel
+    $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        arrows: true,
+        fade: true
+    });
 });
 
 // Add Smooth Scrolling for Navigation Links
