@@ -11,6 +11,7 @@ body {
     line-height: 1.8;
     color: #333;
     margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Styling */
@@ -84,6 +85,8 @@ header nav ul li a:hover {
 
 .hero-links {
     display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
     gap: 1rem;
     margin-top: 2rem;
     z-index: 2;
@@ -204,7 +207,7 @@ footer nav ul li a:hover {
     }
 
     .hero-links {
-        flex-direction: column;
+        flex-direction: column; /* Stack buttons vertically for smaller screens */
         gap: 1rem;
     }
 }
