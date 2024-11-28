@@ -189,6 +189,10 @@ header nav ul li a:hover {
     color: #002B5B;
 }
 
+.about-info, .services-overview {
+    text-align: center;
+}
+
 /* Buttons */
 .button {
     background-color: #4CAF50;
