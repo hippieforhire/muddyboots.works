@@ -1,7 +1,9 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 3000;
+
+// Use Heroku's dynamic port or default to 3000 for local development
+const port = process.env.PORT || 3000;
 
 // Serve all static files (CSS, JS, images) from the current directory
 app.use(express.static(__dirname));
@@ -25,5 +27,5 @@ app.get("/about", (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  console.log(`Server is running on port ${port}`);
 });
