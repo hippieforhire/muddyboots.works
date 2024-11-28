@@ -1,9 +1,18 @@
 const express = require("express");
 const path = require("path");
-const app = express();
+const cors = require("cors");
+const bodyParser = require("body-parser");
+require("dotenv").config(); // Load environment variables
 
-// Use Heroku's dynamic port or default to 3000 for local development
-const port = process.env.PORT || 3000;
+const app = express();
+const port = process.env.PORT || 3000; // Use Heroku's dynamic port or 3000 for local dev
+
+// Enable CORS for all routes
+app.use(cors());
+
+// Parse incoming JSON and URL-encoded data
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve all static files (CSS, JS, images) from the current directory
 app.use(express.static(__dirname));
@@ -23,6 +32,11 @@ app.get("/contact", (req, res) => {
 
 app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "about.html"));
+});
+
+// Example API route for future backend features
+app.get("/api/example", (req, res) => {
+  res.json({ message: "This is an example API response!" });
 });
 
 // Start the server
