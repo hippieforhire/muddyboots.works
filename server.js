@@ -1,14 +1,20 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 3000;
 
-// Serve all static files (CSS, JS, images) from the current directory
+// Use the environment port for Heroku or default to 3000 locally
+const port = process.env.PORT || 3000;
+
+// Serve static files (CSS, JS, images, etc.) from the root directory
 app.use(express.static(__dirname));
 
-// Routes for your pages
+// Define routes for your HTML pages
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
+});
+
+app.get("/about", (req, res) => {
+  res.sendFile(path.join(__dirname, "about.html"));
 });
 
 app.get("/services", (req, res) => {
@@ -17,10 +23,6 @@ app.get("/services", (req, res) => {
 
 app.get("/contact", (req, res) => {
   res.sendFile(path.join(__dirname, "contact.html"));
-});
-
-app.get("/about", (req, res) => {
-  res.sendFile(path.join(__dirname, "about.html"));
 });
 
 // Start the server
