@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'bootsregular';
+	src: url(../../assets/fonts/bootsregular-af448d468b18df12be8441ccb0b576b2.woff2) format('woff2'),
+	url(../../assets/fonts/bootsregular-69ff75936cff4959067c27c5c54bfafa.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

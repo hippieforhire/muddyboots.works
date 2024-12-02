@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'blastimo_swashregular';
+	src: url(../../assets/fonts/blastimo_swashregular-266ccffcd0fa25106345e3d77746ab65.woff2) format('woff2'),
+	url(../../assets/fonts/blastimo_swashregular-8012855d796229bda570e8dc763f7747.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

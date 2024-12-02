@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'kg_chasing_carsregular';
+	src: url(../../assets/fonts/kg_chasing_carsregular-a8afa06127c9e48cfb6544337416faab.woff2) format('woff2'),
+	url(../../assets/fonts/kg_chasing_carsregular-f93e6c06cfccc89c7cebb4dfa2ada664.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

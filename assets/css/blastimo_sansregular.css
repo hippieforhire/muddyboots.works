@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'blastimo_sansregular';
+	src: url(../../assets/fonts/blastimo_sansregular-1578bfc09c279c999c98984fa5328ab4.woff2) format('woff2'),
+	url(../../assets/fonts/blastimo_sansregular-7091004e9300892d84f724481224e9a9.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

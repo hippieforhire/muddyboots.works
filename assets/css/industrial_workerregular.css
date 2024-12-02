@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'industrial_workerregular';
+	src: url(../../assets/fonts/industrial_workerregular-15e643aeb2293f4b05f39d86bfb29f4b.woff2) format('woff2'),
+	url(../../assets/fonts/industrial_workerregular-39c0614a2db24049f588779d89d11614.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
