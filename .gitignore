@@ -1,3 +1,9 @@
 node_modules/
 .DS_Store
 *.log
+
+# Old files (kept for backup)
+*-old.html
+styles.css
+muddyhome.notcss
+overhaul.notcss

@@ -4,43 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Muddy Boots Services</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <meta name="description" content="Get in touch with Muddy Boots Services for your land development, excavation, and property service needs.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Muddy Boots Services</h1>
+<body style="padding-top: 0;">
+    <nav class="navbar fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Muddy Boots Services</a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    </nav>
+
+    <header class="masthead" style="min-height: 60vh; padding-top: 120px; padding-bottom: 80px;">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Let's Work Together</div>
+                <div class="intro-heading text-uppercase">Contact Us</div>
+                <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto;">
+                    Ready to start your project? Get in touch with us today for a free consultation and quote.
+                </p>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <h2 data-aos="fade-down">Contact Us</h2>
-            <p data-aos="fade-up">We’d love to hear from you! Reach out with any questions or inquiries.</p>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Get In Touch</h2>
+                        <p class="section-subheading">Reach out to us for more information about our services or to get started on your project.</p>
+                    </div>
+                </div>
+                
+                <div class="row" style="margin-top: 3rem;">
+                    <div class="col-md-8">
+                        <form id="contactForm" name="contactForm" data-bss-recipient="63661a465b204e5dbac7df6db85b8bfb">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" id="name" name="name" placeholder="Your Name *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" id="email" name="email" placeholder="Your Email *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="tel" id="phone" name="phone" placeholder="Your Phone *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Tell us about your project *" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <button class="btn btn-xl" id="sendMessageButton" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="contact-info-card" style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 1rem; backdrop-filter: blur(10px);">
+                            <h4 style="color: white; margin-bottom: 1.5rem;">Contact Information</h4>
+                            
+                            <div class="contact-item" style="margin-bottom: 1.5rem; display: flex; align-items: center;">
+                                <i class="fas fa-phone" style="color: var(--accent-gold); font-size: 1.2rem; margin-right: 1rem; width: 20px;"></i>
+                                <div>
+                                    <strong style="color: white;">Phone</strong><br>
+                                    <span style="color: rgba(255,255,255,0.8);">(636) 388-1925</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item" style="margin-bottom: 1.5rem; display: flex; align-items: center;">
+                                <i class="fas fa-envelope" style="color: var(--accent-gold); font-size: 1.2rem; margin-right: 1rem; width: 20px;"></i>
+                                <div>
+                                    <strong style="color: white;">Email</strong><br>
+                                    <span style="color: rgba(255,255,255,0.8);">josh@muddyboots.works</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item" style="margin-bottom: 1.5rem; display: flex; align-items: center;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--accent-gold); font-size: 1.2rem; margin-right: 1rem; width: 20px;"></i>
+                                <div>
+                                    <strong style="color: white;">Service Areas</strong><br>
+                                    <span style="color: rgba(255,255,255,0.8);">St. Louis Area, Union, Washington, Foristell, Troy, Bowling Green, Hannibal, Palmyra</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item" style="display: flex; align-items: center;">
+                                <i class="fas fa-clock" style="color: var(--accent-gold); font-size: 1.2rem; margin-right: 1rem; width: 20px;"></i>
+                                <div>
+                                    <strong style="color: white;">Response Time</strong><br>
+                                    <span style="color: rgba(255,255,255,0.8);">Within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <section class="contact-info" data-aos="fade-in">
-            <h2>Get in Touch</h2>
-            <p>Email: josh@muddyboots.works</p>
-            <p>Phone: </p>
-            <p>Address: </p>
+        
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">Why Choose Muddy Boots Services?</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div style="padding: 1.5rem;">
+                                    <i class="fas fa-award" style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+                                    <h5 style="color: var(--primary-blue);">Quality Work</h5>
+                                    <p style="color: var(--text-medium);">Professional results that exceed expectations</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style="padding: 1.5rem;">
+                                    <i class="fas fa-handshake" style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+                                    <h5 style="color: var(--primary-blue);">Reliable Service</h5>
+                                    <p style="color: var(--text-medium);">On-time completion and clear communication</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style="padding: 1.5rem;">
+                                    <i class="fas fa-dollar-sign" style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+                                    <h5 style="color: var(--primary-blue);">Fair Pricing</h5>
+                                    <p style="color: var(--text-medium);">Competitive rates with transparent quotes</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style="padding: 1.5rem;">
+                                    <i class="fas fa-users" style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+                                    <h5 style="color: var(--primary-blue);">Local Team</h5>
+                                    <p style="color: var(--text-medium);">Experienced professionals serving Missouri</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Copyright © 2024 Muddy Boots Services - All Rights Reserved.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Muddy Boots Services 2024</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-buttons">
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="quicklinks">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="interactions.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
