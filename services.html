@@ -4,60 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Muddy Boots Services</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <meta name="description" content="Comprehensive land development, excavation, woodshop, lawn care, and general services by Muddy Boots Services.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Muddy Boots Services</h1>
+<body style="padding-top: 0;">
+    <nav class="navbar fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Muddy Boots Services</a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    </nav>
+
+    <header class="masthead" style="min-height: 60vh; padding-top: 120px; padding-bottom: 80px;">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Professional Solutions</div>
+                <div class="intro-heading text-uppercase">Our Services</div>
+                <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto;">
+                    Explore our comprehensive range of services designed to meet all your property development and maintenance needs.
+                </p>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <h2 data-aos="fade-down">Our Services</h2>
-            <p data-aos="fade-up">Explore the wide range of services we offer to meet your landscaping needs.</p>
-        </section>
-
-        <section data-aos="fade-in">
-            <h2>Our Services</h2>
-            <section>
-                <h3>Land Development</h3>
-                <p>From planning to execution, our land development services transform raw properties into fully prepared spaces ready for your vision. We specialize in grading, clearing, and site preparation to ensure a strong foundation for any project.</p>
-            </section>
-            <section>
-                <h3>Excavation</h3>
-                <p>With precision and expertise, we can handle many different kinds of projects. Whether it’s digging foundations, trenching, or earthmoving, we guarantee efficient and safe results tailored to your needs.</p>
-            </section>
-            <section>
-                <h3>Woodshop</h3>
-                <p>Our woodwork delivers quality craftsmanship for both structural and aesthetic projects. From framing and decking to custom woodwork, we bring your ideas to life with attention to detail and durability.</p>
-            </section>
-            <section>
-                <h3>Lawn Upgrades</h3>
-                <p>Enhance your property’s curb appeal with our reliable lawn services. We provide updates, remodels, fertilizing, and seasonal cleanups to keep your outdoor spaces looking pristine.</p>
-            </section>
-            <section>
-                <h3>General Services</h3>
-                <p>No job is too small or too complex. From material handling to minor repairs and property maintenance, our team is ready to help with any labor-intensive task you need done efficiently.</p>
-            </section>
+        <section id="services" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Complete Service Portfolio</h2>
+                        <p class="section-subheading">From initial planning to final execution, we deliver excellence in every project</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-mountain" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1.5rem;"></i>
+                            </div>
+                            <h4>Land Development</h4>
+                            <p>From planning to execution, our land development services transform raw properties into fully prepared spaces ready for your vision. We specialize in grading, clearing, and site preparation to ensure a strong foundation for any project.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-hammer" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1.5rem;"></i>
+                            </div>
+                            <h4>Excavation</h4>
+                            <p>With precision and expertise, we handle various excavation projects. Whether it's digging foundations, trenching, or earthmoving, we guarantee efficient and safe results tailored to your specific needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-tools" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1.5rem;"></i>
+                            </div>
+                            <h4>Woodshop Services</h4>
+                            <p>Our woodwork delivers quality craftsmanship for both structural and aesthetic projects. From framing and decking to custom woodwork, we bring your ideas to life with attention to detail and durability.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-seedling" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1.5rem;"></i>
+                            </div>
+                            <h4>Lawn & Landscape</h4>
+                            <p>Enhance your property's curb appeal with our comprehensive lawn services. We provide updates, remodels, fertilizing, and seasonal cleanups to keep your outdoor spaces looking pristine year-round.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-wrench" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1.5rem;"></i>
+                            </div>
+                            <h4>General Services</h4>
+                            <p>No job is too small or too complex. From material handling to minor repairs and property maintenance, our experienced team is ready to help with any labor-intensive task efficiently.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-home" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1.5rem;"></i>
+                            </div>
+                            <h4>Property Upgrades</h4>
+                            <p>Transform your property with our comprehensive upgrade services. From hardscaping to outdoor improvements, we help increase your property value and create spaces you'll love.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-12 text-center" style="margin-top: 3rem;">
+                        <a href="contact.html" class="btn btn-xl">Get Your Free Quote</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Copyright © 2024 Muddy Boots Services - All Rights Reserved.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Muddy Boots Services 2024</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-buttons">
+                        <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="quicklinks">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="interactions.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
